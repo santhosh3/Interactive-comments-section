@@ -16,10 +16,7 @@ body{
 html{
     font-family: 'Rubik', sans-serif;
 }
-
-
 .main{
-    /* border: 1px solid black; */
     height: 950px;
     width: 60%;
     margin: auto;
@@ -35,6 +32,6 @@ html{
     align-items: center;
     justify-content: center;
     gap: 55px;
-    border-radius: 1.5em;
+    border-radius: 2.5em;
     margin-bottom: 1em;
 } 

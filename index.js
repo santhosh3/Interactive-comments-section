@@ -99,9 +99,7 @@ newCmtAdd()
 deletCmt()
 
 function like() {
-
     const plusBtn = document.querySelectorAll(".plus-btn")
-
     plusBtn.forEach((btn) => {
         btn.addEventListener("click", () => {
             let classnum = btn.classList[1]
@@ -112,9 +110,7 @@ function like() {
 }
 
 function disLike() {
-
     const minusBtn = document.querySelectorAll(".minus-btn")
-
     minusBtn.forEach((btn) => {
         btn.addEventListener("click", () => {
             let classnum = btn.classList[1]
@@ -122,7 +118,6 @@ function disLike() {
             if (score > 0)
                 document.querySelector(`#like-count${classnum}`).innerHTML = parseInt(score) - 1
         })
-
     })
 }
 
@@ -145,11 +140,8 @@ function newCmtAdd() {
             }
         }
         mydata.comments.push(replyObjCmt)
-
-        // mydata.comments.push(replyObjCmt)
         document.querySelector('.data').innerHTML = ""
         appendData(mydata)
-
     })
 }
 
